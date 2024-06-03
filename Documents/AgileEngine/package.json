@@ -1,0 +1,25 @@
+{
+  "name": "agileengine",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --ext .ts --ignore-pattern .gitignore",
+    "lint:fix": "eslint . --ext .ts --ignore-pattern .gitignore --fix",
+    "test:all": "npx playwright test --config playwright.config.js",
+    "test:chromium": "npx playwright test --project=Chromium --config playwright.config.js",
+    "test:firefox": "npx playwright test --project=Firefox --config playwright.config.js",
+    "test:accessibility": "npx playwright test --project=Chromium --grep @accessibility --config playwright.config.js",
+    "test:functional": "npx playwright test --project=Chromium --grep @functional --config playwright.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.44.1",
+    "@types/node": "^20.13.0"
+  },
+  "dependencies": {
+    "@axe-core/playwright": "^4.9.1"
+  }
+}
