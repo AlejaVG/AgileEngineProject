@@ -69,7 +69,7 @@ The following software are required:
 1. Clone the repo on your local using below URL
 
 
-https://msstash.morningstar.com/scm/corpmrkt/corpmrkt-test-automation.git
+https://github.com/AlejaVG/AgileEngineProject
 
 
 2. Navigate to the folder and install npm packages using:
